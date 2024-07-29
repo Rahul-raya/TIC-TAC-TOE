@@ -1,6 +1,7 @@
 def sum(a, b, c):
     return a + b + c
 
+# creating a function to print tic tac toe board
 def printboard(xstate, ostate):
     zero = 'x' if xstate[0] else ('o' if ostate[0] else ' 0')
     one = 'x' if xstate[1] else ('o' if ostate[1] else ' 1')
@@ -18,6 +19,7 @@ def printboard(xstate, ostate):
     print(f"--|---|---")
     print(f"{six}| {seven}|{eight}")
 
+# creating a function to  check who won the match
 def checkwin(xstate, ostate):
     wins = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
     for win in wins:
